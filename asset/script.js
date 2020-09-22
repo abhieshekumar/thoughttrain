@@ -11,7 +11,7 @@ modal.onclick = function(e) {
 
 
 function shareModal(event,link) {
-    link = window.location.origin+link;
+    link = window.location.origin+'/thoughttrain'link;
     event.preventDefault();
     body.style.overflow = 'hidden';
     modal.style.top = window.scrollY+'px';
