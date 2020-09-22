@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap&family=Coustard" rel="stylesheet">
+        <script async src="https://use.fontawesome.com/a840409b3e.js"></script>
+        <link rel="stylesheet" href="./asset/style.css">
+        <link rel="icon" href="./asset/images/favicon.png" type="image/png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Welcome to Thought Train</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Abhishek Kumar">
+        <meta name="description" content="Thought Train is a place of sharing thoughts and stories which are otherwise discarded. It includes both, work of fiction and work of non fiction. Let us start reading.">
+        <meta property="og:title" content="Welcome to Thought Train" />
+        <meta property="og:description" content="Thought Train is a place of sharing thoughts and stories which are otherwise discarded. It includes both, work of fiction and work of non fiction. Let us start reading." />
+        <meta property="og:image" content=""/>
+    </head>
+    <body>
+        <header>
+            Thought Train
+            <nav class="container">
+                <div class="navigation">
+                    <ul class="menu-big">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="./fiction.html">Fiction</a></li>
+                        <li><a href="./non-fiction.html">Non Fiction</a></li>
+                        <li><a href="#">Subscribe</a></li>
+                    </ul>                
+                    <ul class="menu-small">
+                        <li>
+                            <div class="dropdown">
+                                <span>Category</span>
+                                <div class="dropdown-content">
+                                    <p><a href="#">All</a></p>
+                                    <p><a href="./fiction.html">Fiction</a></p>
+                                    <p><a href="./non-fiction.html">Non-Fiction</a></p>
+                                </div>  
+                            </div>
+                        </li>
+                        <li><a href="#">Subscribe</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="story-flash" style="display: none;">
+                Featured
+            </div>
+            <div class="body" style="display: none;" >
+                <div class="story-container">
+                    <div class="story-title">
+                       Bringing life to WhatsApp 
+                    </div>
+                    <div class="story-info">
+                        <ul>
+                            <li>24 Aug 2020</li>
+                            <li>𑁉</li>
+                            <li>3 min</li>
+                        </ul>
+                    </div>
+                    <div class="story-description">
+                        Instant messaging has brought our daily conversations to a whole new level of experience. However it has taken away the personal experience during a coversation. Here is my solution to bring excitement to an otherwise boring conversation. Instant messaging has brought our daily conversations to a whole new level of experience. However it has taken away the personal experience during a coversation. Here is my solution to bring excitement to an otherwise boring conversation.
+                    </div>
+                    <div class="story-bottom">
+                        <div class="story-tag">
+                            <p>Life Experience</p>
+                            <p>Personal</p>
+                        </div>
+                        <div class="story-options">
+                            <div class="story-tag" onclick="shareModal(event,'link')">
+                                <i class="fa fa-share-square-o" aria-hidden="true"></i> &nbsp; Share
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-container">
+                    <div class="story-title">
+                       Bringing life to WhatsApp 
+                    </div>
+                    <div class="story-info">
+                        <ul>
+                            <li>24 Aug 2020</li>
+                            <li>𑁉</li>
+                            <li>3 min</li>
+                        </ul>
+                    </div>
+                    <div class="story-description">
+                        Instant messaging has brought our daily conversations to a whole new level of experience. However it has taken away the personal experience during a coversation. Here is my solution to bring excitement to an otherwise boring conversation. Instant messaging has brought our daily conversations to a whole new level of experience. However it has taken away the personal experience during a coversation. Here is my solution to bring excitement to an otherwise boring conversation.
+                    </div>
+                    <div class="story-bottom">
+                        <div class="story-tag">
+                            <p>Life Experience</p>
+                            <p>Personal</p>
+                        </div>
+                        <div class="story-options">
+                            <div class="story-tag">
+                                <i class="fa fa-share-square-o" aria-hidden="true"></i> &nbsp; Share
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vspace"></div>
+            
+            <div class="story-flash">
+                Let us stay in touch
+            </div>
+            <div class="body" style="justify-content: center; align-content:center; height: 80px;">
+                <form id="heroSubs" onsubmit="addSubscriber(event, 'heroSubsMail');return false;">
+                    <input onfocus="this.value='';this.style.color='#8a8484'" type="email" id="heroSubsMail" placeholder="Enter your email to receive story updates in future." required>
+                    <button type="submit" form="heroSubs">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="vspace"></div>
+
+            <div class="story-flash">
+                Explore
+            </div>
+            <div class="body">
+                <div class="story-container">
+                    <div class="story-title">
+                       Bringing life to WhatsApp 
+                    </div>
+                    <div class="story-info">
+                        <ul>
+                            <li>24 Aug 2020</li>
+                            <li>𑁉</li>
+                            <li>3 min read</li>
+                        </ul>
+                    </div>
+                    <a class="story-description" href="./data/bringing-life-to-whatsapp.html">
+                        Instant messaging has brought our daily conversations to a whole new level of experience. However it has taken away the personal experience during a coversation. Here is my solution to bring excitement to an otherwise boring conversation.
+                    </a>
+                    <div class="story-bottom">
+                        <div class="story-tag">
+                            <p>Life Experience</p>
+                            <p>WhatsApp</p>
+                            <p>People</p>
+                        </div>
+                        <div class="story-options">
+                            <div class="story-tag" onclick="shareModal(event,'/data/bringing-life-to-whatsapp.html')">
+                                <i class="fa fa-share-square-o" aria-hidden="true"></i> &nbsp; Share
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-container">
+                    <div class="story-title">
+                        Perspective
+                    </div>
+                    <div class="story-info">
+                        <ul>
+                            <li>21 September 2020</li>
+                            <li>𑁉</li>
+                            <li>2 min read</li>
+                        </ul>
+                    </div>
+                    <a class="story-description" href="./data/perspective.html">
+                        Our decisions are governed by our experiences. However, giving room for others perspective is surely going to broaden your understanding. Let's leave a teeny tiny possibility that you can be wrong.
+                    </a>
+                    <div class="story-bottom">
+                        <div class="story-tag">
+                            <p>Observation</p>
+                            <p>People</p>
+                        </div>
+                        <div class="story-options">
+                            <div class="story-tag" onclick="shareModal(event,'/data/perspective.html')">
+                                <i class="fa fa-share-square-o" aria-hidden="true"></i> &nbsp; Share
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-container">
+                    <div class="story-title">
+                        The Smaller Things in Life
+                    </div>
+                    <div class="story-info">
+                        <ul>
+                            <li>15 Aug 2020</li>
+                            <li>𑁉</li>
+                            <li>3 min</li>
+                        </ul>
+                    </div>
+                    <a class="story-description" href="./data/the-smaller-things-in-life.html">
+                        You must have came across the idea of — Thinking Big. I do agree with it. However, it will be easier and effective if we do not overlook the smaller ideas and the minuscule details.
+                    </a>
+                    <div class="story-bottom">
+                        <div class="story-tag">
+                            <p>Life Experience</p>
+                            <p>Goals</p>
+                            <p>Wellness</p>
+                        </div>
+                        <div class="story-options">
+                            <div class="story-tag" onclick="shareModal(event,'/data/the-smaller-things-in-life.html')">
+                                <i class="fa fa-share-square-o" aria-hidden="true"></i> &nbsp; Share
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vspace"></div>
+            <div class="container">
+                <div class="footer">
+                    <div class="footer-section">
+                        <div class="body" style="align-content:center; height: 80px; justify-content: space-evenly;">
+                            <form style="width: 90%;" id="footerSubs" onsubmit="addSubscriber(event, 'footerSubsMail');return false;">
+                                <input onfocus="this.value='';this.style.color='#8a8484'" type="email" id="footerSubsMail" placeholder="Enter your email to receive story updates in future." required>
+                                <button type="submit" form="footerSubs">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer-section" style="display: flex; justify-content: space-evenly;">
+                        <div class="footer-container">
+                            <ul>
+                                <li>Explore</li>
+                                <li><a href="./fiction.html">Fiction</a></li>
+                                <li><a href="./non-fiction.html">Non fiction</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-container">
+                            <ul>
+                                <li>Reach us Out</li>
+                                <li><a href="https://forms.gle/9c49Br2fEUPvkzfu7" target="_blank" rel="nofollow">Contact</a></li>
+                                <li><a href="https://forms.gle/CKLEQsRgo9XuHoBD7" target="_blank" rel="nofollow">Submit a Testimonial</a></li>
+                                <li>Report website issue</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vspace"></div>
+        </div>
+
+        <div class="modal-container" id="share-modal" style="display: none">
+            <div class="modal">
+                <div class="modal-header">
+                    <div class="modal-head">
+                        Thank you for choosing to share. You are just one step away.
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li id="share-copy"><i class="fa fa-clipboard fa-lg" aria-hidden="true"><a>&nbsp; Copy Link</a></i></li>
+                        <li id="share-fb"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"><a>&nbsp; Facebook</a></i></li>
+                        <li id="share-tweet"><i class="fa fa-twitter-square fa-lg" aria-hidden="true"><a>&nbsp; Tweet</a></i></lis>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./asset/script.js"></script>
+    <script async src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script async src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+</html>
