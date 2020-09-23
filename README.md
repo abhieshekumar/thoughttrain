@@ -1,5 +1,7 @@
 # Thought Train
 
+[Give a read to the stories](https://abhieshekumar.github.io/thoughttrain/)
+
 ## Objective
 
 To write ideas/thoughts which otherwise are just dismissed or don't have enough context to be backed up.
