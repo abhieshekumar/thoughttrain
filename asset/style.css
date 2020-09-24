@@ -9,10 +9,10 @@
     background: #000;
   }
   
-  ::selection {
+::selection {
     color: #fff;
     background: #000;
-  }
+}
 
 .container {
     width: 100%;
