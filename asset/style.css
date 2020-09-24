@@ -4,6 +4,16 @@
     font-family: 'Coustard', serif;
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: #000;
+  }
+  
+  ::selection {
+    color: #fff;
+    background: #000;
+  }
+
 .container {
     width: 100%;
     max-width: 1180px;
